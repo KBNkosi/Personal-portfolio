@@ -32,17 +32,17 @@ const Navbar = () => {
 
 
   return (
-    <div className='flex justify-between items-center px-4 bg-gray-800 w-full h-20 text-white fixed'>
+    <div className='flex justify-between items-center px-4 bg-white/90 w-full h-20 text-slate-800 fixed shadow-md backdrop-blur-sm'>
         <div>
-           <h1 className='text-5xl font-signature ml-2'>Kenny Nkosi</h1>
+           <h1 className='text-5xl font-signature ml-2 text-blue-500'>Kenny Nkosi</h1>
         </div>
 
         <ul className='hidden md:flex'>
 
            {links.map(({id, link}) =>(
             
-            <li key={id} className='px-4 cursor-pointer capitalize font-medium text-white  hover:text-gray-500 hover:scale-105 duration-200'>
-            <Link to={link} smooth duration={500} onClick={onclick}> {link}</Link>
+            <li key={id} className='px-4 cursor-pointer capitalize font-medium text-slate-600 hover:text-blue-500 hover:scale-105 duration-200'>
+            <Link to={link} smooth duration={500}> {link}</Link>
            </li>
 
            ))}

@@ -7,19 +7,17 @@ import SocialLinks from "./components/SocialLinks"
 import Contact from "./components/contact"
 
 function App() {
-  
 
   return (
-    <>
+    <div className="bg-slate-50">
       <Navbar />
       <Home/>
       <About/>
       <Portfolio/>
       <Experience/>
       <Contact/>
-
       <SocialLinks/>
-    </>
+    </div>
   )
 }
 
