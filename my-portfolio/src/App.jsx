@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar"
 import Portfolio from "./components/Portfolio"
 import SocialLinks from "./components/SocialLinks"
 import Contact from "./components/contact"
+import Skills from "./components/Skills"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -14,8 +16,10 @@ function App() {
       <Home/>
       <About/>
       <Portfolio/>
+      <Skills/>
       <Experience/>
       <Contact/>
+      <Footer/>
       <SocialLinks/>
     </div>
   )
