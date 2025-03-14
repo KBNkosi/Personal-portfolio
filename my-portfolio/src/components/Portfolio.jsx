@@ -11,28 +11,44 @@ const Portfolio = () => {
   const projects=[
     {
       id:1,
-      src:arrayDestruct
+      name: "Career Guidance App",
+      src:arrayDestruct,
+      demo:'https://arraydestruct.com',
+      code:'https://github.com/KBNkosi/CareerGuidance_App.git',
+      description: ""
     },
     {
       id:2,
-      src:installNode
+      name: "Home Page",
+      src:installNode,
+      demo:'https://kbnkosi.github.io/Home-Page-Project/',
+      code:'https://github.com/KBNkosi/Home-Page-Project.git',
+      description: ""
     },
     {
       id:3,
-      src:navbar
+      name: "Coffee List Page",
+      src:navbar,
+      demo:'https://kbnkosi.github.io/Coffee-list-Project/',
+      code:'https://github.com/KBNkosi/Coffee-list-Project.git',
+      description: ""
     },
     {
       id:4,
-      src:reactParallax
+      name: "Translator App",
+      src:reactParallax,
+      demo:'https://kbnkosi.github.io/Translator-App//',
+      code:'https://github.com/KBNkosi/Translator-App.git',
+      description: ""
     },
     {
       id:5,
-      src:reactSmooth
-    },
-    {
-      id:6,
-      src:reactWeather
-    },
+      name: "E-commerce Application",
+      src:reactSmooth,
+      demo:'https://kbnkosi.github.io/E-commerce-Application/',
+      code:'https://github.com/KBNkosi/E-commerce-Application.git',
+      description: ""
+    }
   ]
   return (
     <div
