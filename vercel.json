@@ -1,7 +1,20 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "my-portfolio/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "my-portfolio/dist/$1"
+    }
+  ],
   "buildCommand": "cd my-portfolio && npm install && npm run build",
-  "outputDirectory": "my-portfolio/dist",
-  "installCommand": "cd my-portfolio && npm install",
-  "framework": "vite"
+  "outputDirectory": "my-portfolio/dist"
 }
