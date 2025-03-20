@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my web development projects an
 
 🚀 [View Live Demo](https://kenny-nkosi-portfolio.vercel.app)
 
-![Portfolio Preview](./Personal-portfolio/src/assets/portfolio/ecommerce.jpg)
+![Portfolio Preview](./src/assets/portfolio/ecommerce.jpg)
 
 ## 🛠️ Built With
 
