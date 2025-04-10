@@ -29,7 +29,7 @@ const About = () => {
         <p className="text-xl">
           As a Student Support Mentor, I enjoyed guiding peers through technical
           challenges, which has strengthened my communication skills and
-          deepened my understanding of web development concepts.
+        problem solving skills.
         </p>
       </div>
     </section>

@@ -9,9 +9,8 @@ const Experience = () => {
       period: "Jul 2024 - Oct 2024",
       description: "Collaborated with a team to design and develop a career guidance web application with personalized recommendations.",
       achievements: [
-        "Developed a personality test feature for personalized career recommendations",
-        "Analyzed 50+ courses and universities, improving student satisfaction by 20%",
-        "Implemented responsive design principles for optimal user experience across devices"
+        "Built a personality test feature ",
+        "Conducted research on 50+ courses and universities, improving student satisfaction by 20%.",
       ],
       skills: ["React.js", "Python (Flask)", "SQLite", "TailwindCSS", "REST APIs"]
     },

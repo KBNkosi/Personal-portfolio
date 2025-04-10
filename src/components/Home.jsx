@@ -10,10 +10,9 @@ const Home = () => {
       <div className='max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-between px-4 gap-8'>
         <div className='flex flex-col justify-center md:w-1/2'>
           <h1 className='text-4xl sm:text-6xl font-bold text-slate-800 leading-tight'>Kenny Nkosi</h1>
-          <h2 className='text-2xl sm:text-3xl font-semibold text-blue-600 mt-2'>IT Graduate & Developer</h2>
+          <h2 className='text-2xl sm:text-3xl font-semibold text-blue-600 mt-2'>Information Technology Graduate & Web Developer</h2>
           <p className='text-slate-600 py-4 text-lg'>
-            Passionate about software development, cloud computing, and technical support.
-            Skilled in developing scalable systems and resolving technical challenges.
+          Building responsive web applications with modern technologies
           </p>
 
           <div>
