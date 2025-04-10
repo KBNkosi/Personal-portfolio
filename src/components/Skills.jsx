@@ -72,13 +72,11 @@ const Skills = () => {
 
   const otherSkills = [
     "MySQL",
-    "SQLite",
-    "Flask",
-    "REST APIs",
     "Problem-solving",
     "Communication",
     "Teamwork",
-    "Attention to Detail"
+    "Attention to Detail",
+    "Willingness to Learn"
   ];
     
   return (

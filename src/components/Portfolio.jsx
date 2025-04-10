@@ -2,7 +2,7 @@ import React from 'react'
 import careerRecommendation from '../assets/portfolio/career-recommedation.jpg'
 import landingPage from '../assets/portfolio/landing-page.png'
 import translator from '../assets/portfolio/translator.jpg'
-import ecommerce from '../assets/portfolio/ecommerce.jpg'
+import tourism from '../assets/portfolio/tourism.jpg'
 import coffeePage from '../assets/portfolio/coffee-page.jpg'
 import PropTypes from 'prop-types'
 
@@ -29,14 +29,20 @@ const ProjectCard = ({ id, src, name, demo, code, description, techStack }) => (
       </div>
       
       <div className='flex items-center justify-between mt-auto'>
-        <a 
-          href={demo} 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className='px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors'
-        >
-          Demo
-        </a>
+        {demo ? (
+          <a 
+            href={demo} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className='px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors'
+          >
+            Demo
+          </a>
+        ) : (
+          <span className='px-4 py-2 bg-gray-400 text-white rounded-md cursor-not-allowed'>
+            Demo Coming Soon
+          </span>
+        )}
         <a 
           href={code} 
           target="_blank" 
@@ -54,7 +60,7 @@ ProjectCard.propTypes = {
   id: PropTypes.number.isRequired,
   src: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  demo: PropTypes.string.isRequired,
+  demo: PropTypes.string,
   code: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   techStack: PropTypes.arrayOf(PropTypes.string).isRequired
@@ -66,7 +72,7 @@ const Portfolio = () => {
       id: 1,
       name: "Career Recommendation System",
       src: careerRecommendation,
-      demo: 'https://career-recommendation-system.vercel.app',
+      demo: null,
       code: 'https://github.com/KBNkosi/Career-Recommendation-System.git',
       description: "A personality test-based career guidance system that provides personalized recommendations to students.",
       techStack: ['React.js', 'Python (Flask)', 'SQLite', 'TailwindCSS', 'JWT', 'REST APIs']
@@ -100,12 +106,12 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      name: "E-commerce Application",
-      src: ecommerce,
-      demo: 'https://e-commerce-application-rust.vercel.app/',
-      code: 'https://github.com/KBNkosi/E-commerce-Application.git',
-      description: "Modern, responsive e-commerce application with product catalog and cart functionality.",
-      techStack: ['React', 'Vite', 'Tailwind CSS', 'Vercel']
+      name: "Tourism Website",
+      src: tourism,
+      demo: 'https://backroadsite.netlify.app/',
+      code: 'https://github.com/KBNkosi/backroads-application.git',
+      description: " responsive React-based tourism website. Built as part of an advanced React development course to demonstrate modern React practices and responsive web design principles.",
+      techStack: ['React', 'Vite', 'Tailwind CSS', 'Netlify']
     }
    
   ];
